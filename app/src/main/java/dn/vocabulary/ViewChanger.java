@@ -27,6 +27,8 @@ public class ViewChanger {
                     valueClass = CharSequence.class;
                 } else if (value instanceof Integer) {
                     valueClass = int.class;
+                } else if (value instanceof Boolean) {
+                    valueClass = boolean.class;
                 } else {
                     throw new RuntimeException("Unexpected type of value: " + value.getClass());
                 }
