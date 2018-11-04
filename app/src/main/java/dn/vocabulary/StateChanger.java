@@ -13,9 +13,9 @@ import java.util.List;
 public class StateChanger {
 
     private ExamGenerator examGenerator = new ExamGenerator();
-    private List<V> vocabs = new ArrayList<>();
-    private Iterator<V> iter;
-    private V currentVocab;
+    private List<Vocab> vocabs = new ArrayList<>();
+    private Iterator<Vocab> iter;
+    private Vocab currentVocab;
     private int index = 0;
 
     public void generateNewExam(String examNumber) {
@@ -33,7 +33,7 @@ public class StateChanger {
                 .with("setText", currentVocab.unknown);
 
         int color = 0;
-        if (currentVocab.unknown.equals(answer)) {
+        if (currentVocab.unknown.equals(answer.trim())) {
             color = Color.GREEN;
         } else {
             color = Color.RED;
