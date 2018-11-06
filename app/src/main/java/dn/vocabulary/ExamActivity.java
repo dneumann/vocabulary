@@ -19,11 +19,6 @@ public class ExamActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exam);
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
         Bundle extras = getIntent().getExtras();
         String examNumber = extras.getString("examNumber");
         stateChanger.generateNewExam(examNumber);
