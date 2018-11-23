@@ -13,8 +13,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void startExam1(View view) {
-        startExam("1");
+    public void startExamUnit1b(View view) {
+        startExam("Unit1b");
+    }
+
+    public void startExamUnit1c(View view) {
+        startExam("Unit1c");
     }
 
     private void startExam(String number) {

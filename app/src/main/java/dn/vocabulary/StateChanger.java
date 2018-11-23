@@ -19,8 +19,7 @@ public class StateChanger {
     private int index = 0;
 
     public void generateNewExam(String examNumber) {
-        int examNr = Integer.parseInt(examNumber);
-        vocabs = examGenerator.getExam(examNr);
+        vocabs = examGenerator.getExam(examNumber);
         iter = vocabs.iterator();
     }
 
