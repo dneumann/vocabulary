@@ -121,6 +121,31 @@ public class ExamGenerator {
             vocabs.add(new Vocab("Es gibt/sind keine...", "There aren't any..."));
             vocabs.add(new Vocab("auf Deutsch", "in German"));
             vocabs.add(new Vocab("auf Englisch", "in English"));
+        } else if ("Unit1cSentences".equals(number)) {
+            vocabs.add(new Vocab("Wo ist Justin? (kurz)", "Where's Justin?"));
+            vocabs.add(new Vocab("Es ist 11 Uhr. (kurz)", "It's 11 o'clock."));
+            vocabs.add(new Vocab("Was ist die erste Frage?", "What is the first question?"));
+            vocabs.add(new Vocab("Finde den Raum.", "Find the room."));
+            vocabs.add(new Vocab("Gibt es igendwelche Karten?", "Are there any maps?"));
+            vocabs.add(new Vocab("Gibt es eine Karte?", "Is there a map?"));
+            vocabs.add(new Vocab("Ja, es gibt eine Karte von England. (kurz)", "Yes, there's a map of England."));
+            vocabs.add(new Vocab("Ich kann es buchstabieren.", "I can spell it."));
+            vocabs.add(new Vocab("Kannst du es buchstabieren?", "Can you spell it?"));
+            vocabs.add(new Vocab("Hier ist es!", "Here it is!"));
+            vocabs.add(new Vocab("Es gibt viele Computer.", "There are lots of computers."));
+            vocabs.add(new Vocab("Wo kannst du ein Buch lesen?", "Where can you read a book?"));
+            vocabs.add(new Vocab("Du bist doof, Justin. (kurz)", "You're silly, Justin."));
+            vocabs.add(new Vocab("Wann ist die Bibliothek geöffnet?", "When is the library open?"));
+            vocabs.add(new Vocab("Welche Farbe haben die Stühle?", "What colour are the chairs?"));
+            vocabs.add(new Vocab("Können wir jetzt zurückgehen?", "Can we go back now?"));
+            vocabs.add(new Vocab("Können wir ihn finden?", "Can we find him?"));
+            vocabs.add(new Vocab("Team 2 ist der Gewinner.", "Team 2 are the winners."));
+            vocabs.add(new Vocab("Wo sind deine Hausaufgaben?", "Where is your homework?"));
+            vocabs.add(new Vocab("Auf welcher Seite sind wir?", "What page are we on?"));
+            vocabs.add(new Vocab("Entschuldigung, ich komme zu spät.", "Sorry, I am late."));
+            vocabs.add(new Vocab("Kann ich das Fenster öffnen?", "Can I open the window?"));
+            vocabs.add(new Vocab("Ich kann einen Bleistift sehen.", "I can see a pencil."));
+            vocabs.add(new Vocab("Apostroph (')", "apostrophe"));
         }
         Collections.shuffle(vocabs);
         return vocabs;

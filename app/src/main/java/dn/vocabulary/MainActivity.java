@@ -21,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
         startExam("Unit1c");
     }
 
+    public void startExamUnit1cSentences(View view) {
+        startExam("Unit1cSentences");
+    }
+
     private void startExam(String number) {
         Intent startsExam = new Intent(this, ExamActivity.class);
         startsExam.putExtra("examNumber", number);
