@@ -21,7 +21,8 @@ public class ExamActivity extends AppCompatActivity {
         setContentView(R.layout.activity_exam);
         Bundle extras = getIntent().getExtras();
         String examNumber = extras.getString("examNumber");
-        stateChanger.generateNewExam(examNumber);
+        boolean randomize = extras.getBoolean("randomize");
+        stateChanger.generateNewExam(examNumber, randomize);
 
         List<State> newStates = stateChanger.getNextVocabulary();
         viewChanger.applyNewStates(newStates, this);

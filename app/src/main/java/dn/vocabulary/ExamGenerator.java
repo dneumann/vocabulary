@@ -8,7 +8,7 @@ public class ExamGenerator {
 
     private List<Vocab> vocabs = new ArrayList<>();
 
-    public List<Vocab> getExam(String number) {
+    public List<Vocab> getExam(String number, boolean randomize) {
         if ("Unit1b".equals(number)) {
 //            vocabs.add(new Vocab("die Mitschülerin", "the classmate"));
 //            vocabs.add(new Vocab("der Mitschüler", "the classmate"));
@@ -150,24 +150,24 @@ public class ExamGenerator {
             vocabs.add(new Vocab("Ich kann einen Bleistift sehen.", "I can see a pencil."));
             vocabs.add(new Vocab("Apostroph (')", "apostrophe"));
         } else if ("deutsch1".equals(number)) {
-            vocabs.add(new Vocab("lat.: das Nomen", "das Substantiv"));
+            vocabs.add(new Vocab("lat.: Nomen", "Substantiv"));
             vocabs.add(new Vocab("Was bezeichnen Nomen/Substantive?", "Lebewesen, Dinge und Vorstellungen"));
-            vocabs.add(new Vocab("lat.: das grammatische Geschlecht", "das Genus"));
+            vocabs.add(new Vocab("lat.: grammatisches Geschlecht", "Genus"));
             vocabs.add(new Vocab("männliches Genus", "Maskulinum"));
             vocabs.add(new Vocab("weibliches Genus", "Femininum"));
             vocabs.add(new Vocab("sächliches Genus", "Neutrum"));
-            vocabs.add(new Vocab("lat.: der Begleiter", "der Artikel"));
+            vocabs.add(new Vocab("lat.: Begleiter", "Artikel"));
             vocabs.add(new Vocab("anderes Wort für 'das Meer'", "die See"));
             vocabs.add(new Vocab("anderes Wort für 'das kleine Gewässer'", "der See"));
             vocabs.add(new Vocab("anderes Wort für 'das Lenkrad'", "das Steuer"));
             vocabs.add(new Vocab("anderes Wort für 'die Geldabgabe'", "die Steuer"));
-            vocabs.add(new Vocab("lat.: die Einzahl", "der Singular"));
-            vocabs.add(new Vocab("lat.: die Mehrzahl", "der Plural"));
-            vocabs.add(new Vocab("lat.: die grammatische Zahl (Plural oder Singular)", "der Numerus"));
-            vocabs.add(new Vocab("lat.: der grammatische Fall", "der Kasus"));
+            vocabs.add(new Vocab("lat.: Einzahl", "Singular"));
+            vocabs.add(new Vocab("lat.: Mehrzahl", "Plural"));
+            vocabs.add(new Vocab("lat.: grammatische Zahl (Plural oder Singular)", "Numerus"));
+            vocabs.add(new Vocab("lat.: grammatischer Fall", "Kasus"));
             vocabs.add(new Vocab("Was kann man mit Nomen machen? (lat.)", "deklinieren"));
             vocabs.add(new Vocab("Was kann man mit Nomen machen? (dt.)", "beugen"));
-            vocabs.add(new Vocab("lat.: die Grundform bei Verben", "der Infinitiv"));
+            vocabs.add(new Vocab("lat.: Grundform bei Verben", "Infinitiv"));
             vocabs.add(new Vocab("Was kann man mit Verben machen? (lat.)", "konjugieren"));
             vocabs.add(new Vocab("Was kann man mit Verben machen? (dt.)", "beugen"));
             vocabs.add(new Vocab("Infinitiv von 'ich laufe'", "laufen"));
@@ -186,7 +186,9 @@ public class ExamGenerator {
             vocabs.add(new Vocab("Was kann man mit Adjektiven machen? (dt.)", "steigern"));
             vocabs.add(new Vocab("Grundstufe, Vergleichsstufe und", "Höchststufe"));
         }
-        Collections.shuffle(vocabs);
+        if (randomize) {
+            Collections.shuffle(vocabs);
+        }
         return vocabs;
     }
 }

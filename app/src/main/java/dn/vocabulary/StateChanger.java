@@ -18,8 +18,8 @@ public class StateChanger {
     private Vocab currentVocab;
     private int index = 0;
 
-    public void generateNewExam(String examNumber) {
-        vocabs = examGenerator.getExam(examNumber);
+    public void generateNewExam(String examNumber, boolean randomize) {
+        vocabs = examGenerator.getExam(examNumber, randomize);
         iter = vocabs.iterator();
     }
 
