@@ -30,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
         startExam("deutsch1");
     }
 
+    public void startExamGerman2(View view) {
+        startExam("deutsch2");
+    }
+
     private void startExam(String number) {
         Switch randomSwitch = findViewById(R.id.switch_random);
         boolean randomize = randomSwitch.isChecked();
