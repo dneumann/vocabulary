@@ -145,7 +145,7 @@ public class ExamGenerator {
             vocabs.add(new Vocab("Team 2 ist der Gewinner.", "Team 2 are the winners."));
             vocabs.add(new Vocab("Wo sind deine Hausaufgaben?", "Where is your homework?"));
             vocabs.add(new Vocab("Auf welcher Seite sind wir?", "What page are we on?"));
-            vocabs.add(new Vocab("Entschuldigung, ich komme zu spät.", "Sorry, I am late."));
+            vocabs.add(new Vocab("Entschuldigung, ich bin zu spät.", "Sorry, I am late."));
             vocabs.add(new Vocab("Kann ich das Fenster öffnen?", "Can I open the window?"));
             vocabs.add(new Vocab("Ich kann einen Bleistift sehen.", "I can see a pencil."));
             vocabs.add(new Vocab("Apostroph (')", "apostrophe"));

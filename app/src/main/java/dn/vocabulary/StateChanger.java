@@ -1,6 +1,7 @@
 package dn.vocabulary;
 
 import android.graphics.Color;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -17,10 +18,12 @@ public class StateChanger {
     private Iterator<Vocab> iter;
     private Vocab currentVocab;
     private int index = 0;
+    private boolean withWriting = true;
 
-    public void generateNewExam(String examNumber, boolean randomize) {
+    public void generateNewExam(String examNumber, boolean randomize, boolean withWriting) {
         vocabs = examGenerator.getExam(examNumber, randomize);
         iter = vocabs.iterator();
+        this.withWriting = withWriting;
     }
 
     public int getNumberOfQuestions() {
@@ -38,7 +41,8 @@ public class StateChanger {
             color = Color.RED;
         }
         State answerColor = State.create("editText_unknownVocab", EditText.class)
-                .with("setTextColor", color);
+                .with("setTextColor", color)
+                .with("setVisibility", withWriting ? View.VISIBLE : View.INVISIBLE);
 
         State buttonDisableCheck = State.create("button_checkAnswer", Button.class)
                 .with("setEnabled", false);
@@ -61,7 +65,8 @@ public class StateChanger {
                 .with("setText", "Question number " + index + " of " + vocabs.size());
         State emptyAnswer = State.create("editText_unknownVocab", EditText.class)
                 .with("setText", "")
-                .with("setTextColor", Color.BLACK);
+                .with("setTextColor", Color.BLACK)
+                .with("setVisibility", withWriting ? View.VISIBLE : View.INVISIBLE);
         State emptyCorrect = State.create("textView_correctVocab", TextView.class)
                 .with("setText", "");
 

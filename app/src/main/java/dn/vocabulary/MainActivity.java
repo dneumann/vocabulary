@@ -37,9 +37,12 @@ public class MainActivity extends AppCompatActivity {
     private void startExam(String number) {
         Switch randomSwitch = findViewById(R.id.switch_random);
         boolean randomize = randomSwitch.isChecked();
+        Switch writingSwitch = findViewById(R.id.switch_writing);
+        boolean withWriting = writingSwitch.isChecked();
         Intent startsExam = new Intent(this, ExamActivity.class);
         startsExam.putExtra("examNumber", number);
         startsExam.putExtra("randomize", randomize);
+        startsExam.putExtra("withWriting", withWriting);
         startActivity(startsExam);
     }
 
