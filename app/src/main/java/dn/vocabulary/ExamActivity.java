@@ -15,6 +15,7 @@ public class ExamActivity extends AppCompatActivity {
     private ViewChanger viewChanger = new ViewChanger();
     private int correctAnswers = 0;
     private boolean withWriting = true;
+    private String examDescription;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class ExamActivity extends AppCompatActivity {
         String examNumber = extras.getString("examNumber");
         boolean randomize = extras.getBoolean("randomize");
         withWriting = extras.getBoolean("withWriting");
+        examDescription = extras.getString("examDescription");
         stateChanger.generateNewExam(examNumber, randomize, withWriting);
 
         List<State> newStates = stateChanger.getNextVocabulary();
@@ -58,6 +60,7 @@ public class ExamActivity extends AppCompatActivity {
             Intent startsResults = new Intent(this, ResultsActivity.class);
             startsResults.putExtra("correctAnswers", correctAnswers);
             startsResults.putExtra("allAnswers", stateChanger.getNumberOfQuestions());
+            startsResults.putExtra("examDescription", examDescription);
             startActivity(startsResults);
         } else {
             viewChanger.applyNewStates(newStates, this);

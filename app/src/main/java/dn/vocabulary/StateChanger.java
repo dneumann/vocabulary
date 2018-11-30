@@ -78,14 +78,18 @@ public class StateChanger {
         return list(textView, textView_status, emptyAnswer, emptyCorrect, buttonCheck, buttonNext);
     }
 
-    public List<State> showResults(int correctAnswers, int allAnswers) {
+    public List<State> showResults(int correctAnswers, int allAnswers, String examDescription) {
+        State description = State.create("textView_examDescription", TextView.class)
+                .with("setText", examDescription);
+
         State textView = State.create("textView_correctAnswers", TextView.class)
                 .with("setText", correctAnswers + " of " + allAnswers);
 
         String grade = cumputeGrade((float) correctAnswers / (float) allAnswers * 100);
         State gradeState = State.create("textView_grade", TextView.class)
                 .with("setText", grade);
-        return list(textView, gradeState);
+
+        return list(description, textView, gradeState);
     }
 
     private String cumputeGrade(float percent) {
