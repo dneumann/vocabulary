@@ -14,6 +14,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void startExamUnit1(View view) {
+        startExam("Unit1");
+    }
+
+    public void startExamUnit1a(View view) {
+        startExam("Unit1a");
+    }
+
     public void startExamUnit1b(View view) {
         startExam("Unit1b");
     }
@@ -22,8 +30,12 @@ public class MainActivity extends AppCompatActivity {
         startExam("Unit1c");
     }
 
-    public void startExamUnit1cSentences(View view) {
-        startExam("Unit1cSentences");
+    public void startExamUnit1cSentences1(View view) {
+        startExam("Unit1cSentences1");
+    }
+
+    public void startExamUnit1cSentences2(View view) {
+        startExam("Unit1cSentences2");
     }
 
     public void startExamGerman1(View view) {
