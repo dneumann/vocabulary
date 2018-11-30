@@ -2,6 +2,7 @@ package dn.vocabulary;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -44,12 +45,19 @@ public class ExamActivity extends AppCompatActivity {
         for (State s : newStates) {
             if (s.id.equals("editText_unknownVocab")) {
                 if ((int)s.getProp("setTextColor") == Color.GREEN) {
+                    startSound(R.raw.yess);
                     correctAnswers++;
                 }
                 return;
             }
         }
     }
+
+    private void startSound(int soundId) {
+        MediaPlayer sound = MediaPlayer.create(this, soundId);
+        sound.start();
+    }
+
 
     public void nextVocabulary(View v) {
         List<State> newStates = stateChanger.getNextVocabulary();
