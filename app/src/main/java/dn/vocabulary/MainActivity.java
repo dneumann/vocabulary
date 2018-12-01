@@ -32,12 +32,20 @@ public class MainActivity extends AppCompatActivity {
         startExam("Unit1c", view);
     }
 
-    public void startExamUnit1cSentences1(View view) {
-        startExam("Unit1cSentences1", view);
+    public void startExamUnit1Sentences1(View view) {
+        startExam("Unit1Sentences1", view);
     }
 
-    public void startExamUnit1cSentences2(View view) {
-        startExam("Unit1cSentences2", view);
+    public void startExamUnit1Sentences2(View view) {
+        startExam("Unit1Sentences2", view);
+    }
+
+    public void startExamUnit1Sentences3(View view) {
+        startExam("Unit1Sentences3", view);
+    }
+
+    public void startExamUnit1Sentences4(View view) {
+        startExam("Unit1Sentences4", view);
     }
 
     public void startExamGerman1(View view) {

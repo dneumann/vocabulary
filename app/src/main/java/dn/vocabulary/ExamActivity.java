@@ -21,14 +21,22 @@ public class ExamActivity extends AppCompatActivity {
     private String examDescription;
     private MediaPlayer sound;
     private List<Integer> happySoundEffects = new ArrayList<>();
+    private List<Integer> sadSoundEffects = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exam);
         happySoundEffects.add(R.raw.item_collected);
+        happySoundEffects.add(R.raw.item_collected);
+        happySoundEffects.add(R.raw.item_collected);
         happySoundEffects.add(R.raw.yeahh);
         happySoundEffects.add(R.raw.yess);
+        happySoundEffects.add(R.raw.bingg);
+        sadSoundEffects.add(R.raw.damn_son);
+        sadSoundEffects.add(R.raw.where_d_you_find_this);
+        sadSoundEffects.add(R.raw.lose);
+        sadSoundEffects.add(R.raw.lose);
         Bundle extras = getIntent().getExtras();
         String examNumber = extras.getString("examNumber");
         boolean randomize = extras.getBoolean("randomize");
@@ -50,10 +58,13 @@ public class ExamActivity extends AppCompatActivity {
     }
     private void evaluateAnswer(List<State> newStates) {
         for (State s : newStates) {
-            if (s.id.equals("editText_unknownVocab")) {
-                if ((int)s.getProp("setTextColor") == Color.GREEN) {
+            if (s.id.equals("editText_unknownVocab") && withWriting) {
+                boolean isCorrect = (int)s.getProp("setTextColor") == Color.GREEN;
+                if (isCorrect) {
                     startHappySound();
                     correctAnswers++;
+                } else {
+                    startSadSound();
                 }
                 return;
             }
@@ -69,6 +80,14 @@ public class ExamActivity extends AppCompatActivity {
         sound.start();
     }
 
+    private void startSadSound() {
+        Collections.shuffle(sadSoundEffects);
+        if (sound != null) {
+            sound.release();
+        }
+        sound = MediaPlayer.create(this, sadSoundEffects.get(0));
+        sound.start();
+    }
 
     public void nextVocabulary(View v) {
         List<State> newStates = stateChanger.getNextVocabulary();

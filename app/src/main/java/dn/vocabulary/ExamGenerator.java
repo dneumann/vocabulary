@@ -171,35 +171,63 @@ public class ExamGenerator {
             vocabs.add(new Vocab("Es gibt/sind keine...", "There aren't any..."));
             vocabs.add(new Vocab("auf Deutsch", "in German"));
             vocabs.add(new Vocab("auf Englisch", "in English"));
-        } else if ("Unit1cSentences1".equals(number)) {
-            vocabs.add(new Vocab("Wo ist Justin? (short)", "Where's Justin?"));
-            vocabs.add(new Vocab("Es ist 11 Uhr. (short)", "It's 11 o'clock."));
-            vocabs.add(new Vocab("Was ist die erste Frage? (long)", "What is the first question?"));
-            vocabs.add(new Vocab("Finde den Raum.", "Find the room."));
-            vocabs.add(new Vocab("Gibt es Karten im Raum?", "Are there any maps in the room?"));
+        } else if ("Unit1Sentences1".equals(number)) {
+            vocabs.add(new Vocab("Ich bin nicht zu Hause. (short)", "I'm not at home."));
+            vocabs.add(new Vocab("Ich bin in der Schule. (long)", "I am at school."));
+            vocabs.add(new Vocab("Wo bin ich? (long)", "Where am I?"));
+            vocabs.add(new Vocab("Du bist nicht zu Hause. (short)", "You aren't at home."));
+            vocabs.add(new Vocab("Du bist in der Schule. (long)", "You are at school."));
+            vocabs.add(new Vocab("Bist du in der Schule? (long)", "Are you at school?"));
+            vocabs.add(new Vocab("Ja, bin ich. (long)", "Yes, I am."));
+            vocabs.add(new Vocab("Nein, bin ich nicht. (short)", "No, I'm not."));
+            vocabs.add(new Vocab("Wer bist du? (long)", "Who are you?"));
+            vocabs.add(new Vocab("Er ist nicht hier. (long)", "He is not here."));
+            vocabs.add(new Vocab("Er ist dort. (long)", "He is there."));
+            vocabs.add(new Vocab("Wir sind nicht in der Bibliothek. (long)", "We are not in the library."));
+            vocabs.add(new Vocab("Ihr seid zu Hause. (long)", "You are at home."));
+            vocabs.add(new Vocab("Seid ihr zu Hause? (long)", "Are you at home?"));
+            vocabs.add(new Vocab("Sie sind nicht im Raum. (long)", "They are not in the room."));
+        } else if ("Unit1Sentences2".equals(number)) {
+            vocabs.add(new Vocab("Es ist zehn Uhr. (short)", "It's ten o'clock."));
+            vocabs.add(new Vocab("Viertel nach zehn", "quarter past ten"));
+            vocabs.add(new Vocab("zwanzig nach zehn", "twenty past ten"));
+            vocabs.add(new Vocab("halb elf", "half past ten"));
+            vocabs.add(new Vocab("Viertel vor zehn", "quarter to ten"));
+            vocabs.add(new Vocab("fünf vor zehn", "five to ten"));
+            vocabs.add(new Vocab("um sieben Uhr", "at seven o'clock"));
+            vocabs.add(new Vocab("am 2. April", "on 2nd April"));
+            vocabs.add(new Vocab("am 23. Juni", "on 23rd June"));
+            vocabs.add(new Vocab("am 21. Juli", "on 21st July"));
+            vocabs.add(new Vocab("am 29. Mai", "on 29th May"));
+            vocabs.add(new Vocab("am 10. März", "on 10th March"));
+        } else if ("Unit1Sentences3".equals(number)) {
             vocabs.add(new Vocab("Gibt es eine Karte im Raum?", "Is there a map in the room?"));
-            vocabs.add(new Vocab("Ja, es gibt eine Karte von England. (short)", "Yes, there's a map of England."));
+            vocabs.add(new Vocab("Ja, es gibt eine Karte. (long)", "Yes, there is a map."));
+            vocabs.add(new Vocab("Ja, gibt es. (eine Karte) (long)", "Yes, there is."));
             vocabs.add(new Vocab("Nein, es gibt keine Karte. (short)", "No, there isn't a map."));
-            vocabs.add(new Vocab("Ja, es gibt viele Karten.", "Yes, there are lots of maps."));
+            vocabs.add(new Vocab("Nein, es gibt keine. (Karte) (short)", "No, there isn't."));
+            vocabs.add(new Vocab("Gibt es Karten hier?", "Are there any maps here?"));
+            vocabs.add(new Vocab("Ja, es gibt viele Karten. (long)", "Yes, there are lots of maps."));
+            vocabs.add(new Vocab("Ja, gibt es. (viele Karten) (long)", "Yes, there are."));
             vocabs.add(new Vocab("Nein, es gibt keine Karten. (short)", "No, there aren't any maps."));
+            vocabs.add(new Vocab("Nein, es gibt keine. (Karten) (short)", "No, there aren't any."));
+        } else if ("Unit1Sentences4".equals(number)) {
             vocabs.add(new Vocab("Ich kann es buchstabieren.", "I can spell it."));
-            vocabs.add(new Vocab("Kannst du es buchstabieren?", "Can you spell it?"));
-            vocabs.add(new Vocab("Hier ist es!", "Here it is!"));
-            vocabs.add(new Vocab("Es gibt viele Computer.", "There are lots of computers."));
-        } else if ("Unit1cSentences2".equals(number)) {
-            vocabs.add(new Vocab("Wo kannst du ein Buch lesen?", "Where can you read a book?"));
-            vocabs.add(new Vocab("Du bist doof, Justin. (short)", "You're silly, Justin."));
-            vocabs.add(new Vocab("Wann ist die Bibliothek geöffnet?", "When is the library open?"));
-            vocabs.add(new Vocab("Welche Farbe haben die Stühle?", "What colour are the chairs?"));
-            vocabs.add(new Vocab("Können wir jetzt zurückgehen?", "Can we go back now?"));
-            vocabs.add(new Vocab("Können wir ihn finden?", "Can we find him?"));
-            vocabs.add(new Vocab("Team 2 ist der Gewinner. (Vorsicht!)", "Team 2 are the winners."));
-            vocabs.add(new Vocab("Wo sind deine Hausaufgaben? (Vorsicht!)", "Where is your homework?"));
-            vocabs.add(new Vocab("Auf welcher Seite sind wir?", "What page are we on?"));
-            vocabs.add(new Vocab("Entschuldigung, ich bin spät dran.", "Sorry, I am late."));
+            vocabs.add(new Vocab("Ich kann es nicht buchstabieren.", "I can't spell it."));
             vocabs.add(new Vocab("Kann ich das Fenster öffnen?", "Can I open the window?"));
+            vocabs.add(new Vocab("Ja, kannst du.", "Yes, you can."));
+            vocabs.add(new Vocab("Ja, kann ich.", "Yes, I can."));
+            vocabs.add(new Vocab("Nein, kannst du nicht.", "No, you can't."));
+            vocabs.add(new Vocab("Nein, kann ich nicht.", "No, I can't."));
+            vocabs.add(new Vocab("Du kannst gehen.", "You can go."));
+            vocabs.add(new Vocab("Ihr könnt gehen.", "You can go."));
+            vocabs.add(new Vocab("Frau Bell, Sie können gehen.", "Miss Bell, you can go."));
+            vocabs.add(new Vocab("Wir können gehen.", "We can go."));
+            vocabs.add(new Vocab("Sie kann den Raum nicht finden.", "She can't find the room."));
+            vocabs.add(new Vocab("Können wir gehen?", "Can we go?"));
+            vocabs.add(new Vocab("Kannst du es buchstabieren?", "Can you spell it?"));
+            vocabs.add(new Vocab("Wo kannst du ein Buch lesen?", "Where can you read a book?"));
             vocabs.add(new Vocab("Ich kann einen Bleistift sehen.", "I can see a pencil."));
-            vocabs.add(new Vocab("Apostroph (')", "apostrophe"));
         } else if ("deutsch1".equals(number)) {
             vocabs.add(new Vocab("lat.: Nomen", "Substantiv"));
             vocabs.add(new Vocab("Was bezeichnen Nomen/Substantive?", "Lebewesen, Dinge und Vorstellungen"));

@@ -22,15 +22,15 @@
         android:layout_height="wrap_content"
         android:onClick="startExamUnit1c"
         android:text="4. Unit 1 C"
-        app:layout_constraintEnd_toEndOf="@+id/button_exam1"
+        app:layout_constraintStart_toStartOf="@+id/button_exam1"
         app:layout_constraintTop_toBottomOf="@+id/button_exam1" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="startExamUnit1cSentences1"
-        android:text="5. Sentences"
+        android:onClick="startExamUnit1Sentences1"
+        android:text="5. (to) be"
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
@@ -38,12 +38,14 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="64dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="5dp"
         android:onClick="startExamGerman1"
         android:text="Deutsch 1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Switch
         android:id="@+id/switch_random"
@@ -103,18 +105,37 @@
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="startExamUnit1cSentences2"
-        android:text="6. Sentences"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        android:layout_marginStart="1dp"
+        android:onClick="startExamUnit1Sentences2"
+        android:text="6. Date and time"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintStart_toEndOf="@+id/button" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
         android:layout_marginTop="8dp"
-        android:text="30. November"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="1st December"
+        app:layout_constraintStart_toEndOf="@+id/button5"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startExamUnit1Sentences3"
+        android:text="7. There aren't any"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button9"
+        app:layout_constraintStart_toStartOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startExamUnit1Sentences4"
+        android:text="8. Can't"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 </android.support.constraint.ConstraintLayout>
