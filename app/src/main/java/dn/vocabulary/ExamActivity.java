@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ExamActivity extends AppCompatActivity {
@@ -17,11 +19,16 @@ public class ExamActivity extends AppCompatActivity {
     private int correctAnswers = 0;
     private boolean withWriting = true;
     private String examDescription;
+    private MediaPlayer sound;
+    private List<Integer> happySoundEffects = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exam);
+        happySoundEffects.add(R.raw.item_collected);
+        happySoundEffects.add(R.raw.yeahh);
+        happySoundEffects.add(R.raw.yess);
         Bundle extras = getIntent().getExtras();
         String examNumber = extras.getString("examNumber");
         boolean randomize = extras.getBoolean("randomize");
@@ -45,7 +52,7 @@ public class ExamActivity extends AppCompatActivity {
         for (State s : newStates) {
             if (s.id.equals("editText_unknownVocab")) {
                 if ((int)s.getProp("setTextColor") == Color.GREEN) {
-                    startSound(R.raw.yess);
+                    startHappySound();
                     correctAnswers++;
                 }
                 return;
@@ -53,8 +60,12 @@ public class ExamActivity extends AppCompatActivity {
         }
     }
 
-    private void startSound(int soundId) {
-        MediaPlayer sound = MediaPlayer.create(this, soundId);
+    private void startHappySound() {
+        Collections.shuffle(happySoundEffects);
+        if (sound != null) {
+            sound.release();
+        }
+        sound = MediaPlayer.create(this, happySoundEffects.get(0));
         sound.start();
     }
 
