@@ -9,7 +9,38 @@ public class ExamGenerator {
     private List<Vocab> vocabs = new ArrayList<>();
 
     public List<Vocab> getExam(String number, boolean randomize) {
-        if ("Unit1".equals(number)) {
+
+        if ("Unit1chaos".equals(number)) {
+            vocabs.add(new Vocab("Chaos", "chaos"));
+            vocabs.add(new Vocab("Laden an der Ecke", "corner shop"));
+            vocabs.add(new Vocab("Meister/in", "master"));
+            vocabs.add(new Vocab("Joghurt", "yoghurt"));
+            vocabs.add(new Vocab("klein", "little"));
+            vocabs.add(new Vocab("immer", "always"));
+            vocabs.add(new Vocab("eine Gruppe Mädchen", "a group of girls"));
+            vocabs.add(new Vocab("die Gruppe (dort)", "that group"));
+            vocabs.add(new Vocab("schwimmen", "swim"));
+            vocabs.add(new Vocab("wie Jungen", "like boys"));
+            vocabs.add(new Vocab("Schwimmer/in", "swimmer"));
+            vocabs.add(new Vocab("gut sein in Kung-Fu", "be good at kung fu"));
+            vocabs.add(new Vocab("Bist du gut in Fußball?", "Are you good at football?"));
+            vocabs.add(new Vocab("Gefühl", "feeling"));
+            vocabs.add(new Vocab("wütend", "angry"));
+            vocabs.add(new Vocab("glücklich", "happy"));
+            vocabs.add(new Vocab("überrascht", "surprised"));
+            vocabs.add(new Vocab("vorspielen", "act out"));
+            vocabs.add(new Vocab("das nächste Bild", "the next picture"));
+            vocabs.add(new Vocab("die nächste Frage", "the next question"));
+            vocabs.add(new Vocab("Mann", "man"));
+            vocabs.add(new Vocab("Männer", "men"));
+            vocabs.add(new Vocab("Frau", "woman"));
+            vocabs.add(new Vocab("Frauen", "women"));
+
+
+
+
+
+        } else if ("Unit1".equals(number)) {
             vocabs.add(new Vocab("in der Schule", "at school"));
             vocabs.add(new Vocab("Kind, Jugendlicher", "kid"));
             vocabs.add(new Vocab("ihr bester Freund", "her best friend"));

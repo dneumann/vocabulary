@@ -18,9 +18,12 @@
         </activity>
         <activity
             android:name=".ExamActivity"
-            android:windowSoftInputMode="stateVisible"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".ResultsActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".ResultsActivity"
+        <activity android:name=".OldStuffActivity"
             android:parentActivityName=".MainActivity" />
     </application>
 

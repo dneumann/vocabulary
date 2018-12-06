@@ -36,7 +36,6 @@ public class ExamActivity extends AppCompatActivity {
         sadSoundEffects.add(R.raw.damn_son);
         sadSoundEffects.add(R.raw.where_d_you_find_this);
         sadSoundEffects.add(R.raw.lose);
-        sadSoundEffects.add(R.raw.lose);
         Bundle extras = getIntent().getExtras();
         String examNumber = extras.getString("examNumber");
         boolean randomize = extras.getBoolean("randomize");
