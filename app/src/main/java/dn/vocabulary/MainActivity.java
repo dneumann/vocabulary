@@ -20,6 +20,14 @@ public class MainActivity extends AppCompatActivity {
         startExam("Unit1chaos", view);
     }
 
+    public void startNorik1(View view) {
+        startExam("Norik1", view);
+    }
+
+    public void startNorik2(View view) {
+        startExam("Norik2", view);
+    }
+
     private void startExam(String number, View view) {
         Switch randomSwitch = findViewById(R.id.switch_random);
         boolean randomize = randomSwitch.isChecked();
