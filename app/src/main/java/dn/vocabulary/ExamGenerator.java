@@ -66,11 +66,24 @@ public class ExamGenerator {
             vocabs.add(new Vocab("klein (nicht little)", "small"));
             vocabs.add(new Vocab("Aufgabe", "task"));
 
+        } else if ("Unit2sentences".equals(number)) {
+            vocabs.add(new Vocab("Ich wohne in der Fear Street.", "I live in Fear Street."));
+            vocabs.add(new Vocab("Ich wohne in der Fear Street 13.", "I live at 13 Fear Street."));
+            vocabs.add(new Vocab("Mein Schlafzimmer ist oben.", "My bedroom is upstairs."));
+            vocabs.add(new Vocab("Das Esszimmer ist unten.", "The dining room is downstairs."));
+            vocabs.add(new Vocab("Das Wohnzimmer ist unten.", "The living room is downstairs."));
+            vocabs.add(new Vocab("Es gibt eine Lampe im Wohnzimmer.", "There is a lamp in the living room."));
+            vocabs.add(new Vocab("Es gibt Spielzeuge im Schlafzimmer.", "There are toys in the bedroom."));
+            vocabs.add(new Vocab("Es ist im Garten. (short)", "It's in the garden."));
+            vocabs.add(new Vocab("Nummer 14 ist eine Uhr.", "Number 14 is a clock."));
+            vocabs.add(new Vocab("Mein Badezimmer ist klein.", "My bathroom is small."));
+
+
         } else if ("Unit2a".equals(number)) {
             vocabs.add(new Vocab("aufwachen", "wake up"));
             vocabs.add(new Vocab("frühstücken", "have breakfast"));
             vocabs.add(new Vocab("ein Teller Krebse", "a plate of crabs"));
-            vocabs.add(new Vocab("crab", "Krebs"));
+            vocabs.add(new Vocab("Krebs", "crab"));
             vocabs.add(new Vocab("nach dem Frühstück", "after breakfast"));
             vocabs.add(new Vocab("am Nachmittag", "in the afternoon"));
             vocabs.add(new Vocab("spielen", "play"));
