@@ -16,8 +16,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void startExamUnit1chaos(View view) {
+    public void startUnit1chaos(View view) {
         startExam("Unit1chaos", view);
+    }
+
+    public void startUnit2(View view) {
+        startExam("Unit2", view);
     }
 
     public void startNorik1(View view) {

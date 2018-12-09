@@ -36,9 +36,77 @@ public class ExamGenerator {
             vocabs.add(new Vocab("Frau", "woman"));
             vocabs.add(new Vocab("Frauen", "women"));
 
+        } else if ("Unit2".equals(number)) {
+            vocabs.add(new Vocab("Familie", "family"));
+            vocabs.add(new Vocab("Familien", "families"));
+            vocabs.add(new Vocab("die Familie Bell", "the Bell family"));
+            vocabs.add(new Vocab("Straße, Landstraße", "road"));
+            vocabs.add(new Vocab("in der Beach Road", "in Beach Road"));
+            vocabs.add(new Vocab("in der Beach Road 8", "at 8 Beach Road"));
+            vocabs.add(new Vocab("Haus", "house"));
+            vocabs.add(new Vocab("Garten", "garden"));
+            vocabs.add(new Vocab("oben, nach oben (Treppe, Etage)", "upstairs"));
+            vocabs.add(new Vocab("unten, nach unten (Treppe, Etage)", "downstairs"));
+            vocabs.add(new Vocab("Schlafzimmer", "bedroom"));
+            vocabs.add(new Vocab("Badezimmer", "bathroom"));
+            vocabs.add(new Vocab("Esszimmer", "dining room"));
+            vocabs.add(new Vocab("Küche", "kitchen"));
+            vocabs.add(new Vocab("Wohnzimmer", "living room"));
+            vocabs.add(new Vocab("Sessel", "armchair"));
+            vocabs.add(new Vocab("Bett", "bed"));
+            vocabs.add(new Vocab("Lampe", "lamp"));
+            vocabs.add(new Vocab("Regal", "shelf"));
+            vocabs.add(new Vocab("Regale", "shelves"));
+            vocabs.add(new Vocab("Sofa", "sofa"));
+            vocabs.add(new Vocab("Tisch", "table"));
+            vocabs.add(new Vocab("Schreibtisch", "desk"));
+            vocabs.add(new Vocab("Spielzeug", "toy"));
+            vocabs.add(new Vocab("Fernsehen, Fernsehgerät", "TV"));
+            vocabs.add(new Vocab("fernsehen", "watch TV"));
+            vocabs.add(new Vocab("klein (nicht little)", "small"));
+            vocabs.add(new Vocab("Aufgabe", "task"));
 
-
-
+        } else if ("Unit2a".equals(number)) {
+            vocabs.add(new Vocab("aufwachen", "wake up"));
+            vocabs.add(new Vocab("frühstücken", "have breakfast"));
+            vocabs.add(new Vocab("ein Teller Krebse", "a plate of crabs"));
+            vocabs.add(new Vocab("crab", "Krebs"));
+            vocabs.add(new Vocab("nach dem Frühstück", "after breakfast"));
+            vocabs.add(new Vocab("am Nachmittag", "in the afternoon"));
+            vocabs.add(new Vocab("spielen", "play"));
+            vocabs.add(new Vocab("am Abend", "in the evening"));
+            vocabs.add(new Vocab("am Morgen", "in the morning"));
+            vocabs.add(new Vocab("am Montag", "on Monday"));
+            vocabs.add(new Vocab("Fisch", "fish"));
+            vocabs.add(new Vocab("zwei Fische", "two fish"));
+            vocabs.add(new Vocab("Abendessen", "dinner"));
+            vocabs.add(new Vocab("zu Abend essen", "have dinner"));
+            vocabs.add(new Vocab("sitzen, sich setzen", "sit"));
+            vocabs.add(new Vocab("Fels", "rock"));
+            vocabs.add(new Vocab("einem Freund eine SMS schicken", "text a friend"));
+            vocabs.add(new Vocab("sie (Akkusativ), ihr (Dativ)", "her"));
+            vocabs.add(new Vocab("segeln, segeln gehen", "go sailing"));
+            vocabs.add(new Vocab("in die Küche (hinein)", "into the kitchen"));
+            vocabs.add(new Vocab("machen, herstellen", "make"));
+            vocabs.add(new Vocab("eine Tasse Tee", "a cup of tea"));
+            vocabs.add(new Vocab("Zeitung", "paper"));
+            vocabs.add(new Vocab("am Wochenende", "at the weekend"));
+            vocabs.add(new Vocab("nachts, in der Nacht", "at night"));
+            vocabs.add(new Vocab("schlafen", "sleep"));
+            vocabs.add(new Vocab("füttern", "feed"));
+            vocabs.add(new Vocab("kein, keine", "no"));
+            vocabs.add(new Vocab("uns", "us"));
+            vocabs.add(new Vocab("natürlich", "of course"));
+            vocabs.add(new Vocab("Korb", "basket"));
+            vocabs.add(new Vocab("Fußboden", "floor"));
+            vocabs.add(new Vocab("Pokal, Trophäe", "trophy"));
+            vocabs.add(new Vocab("weg, fort", "away"));
+            vocabs.add(new Vocab("verrückt", "mad"));
+            vocabs.add(new Vocab("denken, glauben", "think"));
+            vocabs.add(new Vocab("so nett", "so nice"));
+            vocabs.add(new Vocab("spazieren gehen", "go for a walk"));
+            vocabs.add(new Vocab("Aussprache", "pronunciation"));
+            vocabs.add(new Vocab("rennen, laufen", "run"));
 
 
         } else if ("Norik1".equals(number)) {
