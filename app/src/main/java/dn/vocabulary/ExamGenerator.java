@@ -36,6 +36,22 @@ public class ExamGenerator {
             vocabs.add(new Vocab("Frau", "woman"));
             vocabs.add(new Vocab("Frauen", "women"));
 
+        } else if ("Diktat".equals(number)) {
+            vocabs.add(new Vocab("Diktat", "hobbies"));
+            vocabs.add(new Vocab("Diktat", "hobbies"));
+            vocabs.add(new Vocab("Diktat", "hobbies"));
+            vocabs.add(new Vocab("Diktat", "hobbies"));
+        } else if ("Unit3".equals(number)) {
+            vocabs.add(new Vocab("Hobbys", "hobbies"));
+            vocabs.add(new Vocab("einige; etwas", "some"));
+            vocabs.add(new Vocab("in einen Klub eintreten", "join a club"));
+            vocabs.add(new Vocab("mehr", "more"));
+            vocabs.add(new Vocab("4 Uhr nachmittags", "4 pm"));
+            vocabs.add(new Vocab("4 Uhr morgens", "4 am"));
+            vocabs.add(new Vocab("bearbeiten", "edit"));
+            vocabs.add(new Vocab("um 4 Uhr nachmittags", "at 4 pm"));
+            vocabs.add(new Vocab("Gärtnern", "gardening"));
+            vocabs.add(new Vocab("anbauen, anpflanzen", "grow"));
         } else if ("Unit2".equals(number)) {
             vocabs.add(new Vocab("Familie", "family"));
             vocabs.add(new Vocab("Familien", "families"));
