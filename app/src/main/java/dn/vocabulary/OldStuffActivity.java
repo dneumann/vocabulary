@@ -55,6 +55,30 @@ public class OldStuffActivity extends AppCompatActivity {
         startExam("deutsch2", view);
     }
 
+    public void startUnit1chaos(View view) {
+        startExam("Unit1chaos", view);
+    }
+    public void startNorik1(View view) {
+        startExam("Norik1", view);
+    }
+
+    public void startNorik2(View view) {
+        startExam("Norik2", view);
+    }
+
+    public void startUnit2(View view) {
+        startExam("Unit2", view);
+    }
+
+    public void startUnit2sentences(View view) {
+        startExam("Unit2sentences", view);
+    }
+
+    public void startUnit2a(View view) {
+        startExam("Unit2a", view);
+    }
+
+
     private void startExam(String number, View view) {
         Switch randomSwitch = findViewById(R.id.switch_random);
         boolean randomize = randomSwitch.isChecked();
