@@ -28,13 +28,21 @@ public class MainActivity extends AppCompatActivity {
         startExam("Unit3a2", view);
     }
 
+    public void startUnit3b(View view) {
+        startExam("Unit3b", view);
+    }
+
     public void startDiktat(View view) {
-        startExam("Diktat", view);
+        startExam("Diktat", false, view);
     }
 
     private void startExam(String number, View view) {
         Switch randomSwitch = findViewById(R.id.switch_random);
         boolean randomize = randomSwitch.isChecked();
+        startExam(number, randomize, view);
+    }
+
+    private void startExam(String number, boolean randomize, View view) {
         Switch writingSwitch = findViewById(R.id.switch_writing);
         boolean withWriting = writingSwitch.isChecked();
         String examDescription = ((TextView)view).getText().toString();

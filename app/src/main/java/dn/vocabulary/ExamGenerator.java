@@ -37,10 +37,42 @@ public class ExamGenerator {
             vocabs.add(new Vocab("Frauen", "women"));
 
         } else if ("Diktat".equals(number)) {
-            vocabs.add(new Vocab("Diktat", "hobbies"));
-            vocabs.add(new Vocab("Diktat", "hobbies"));
-            vocabs.add(new Vocab("Diktat", "hobbies"));
-            vocabs.add(new Vocab("Diktat", "hobbies"));
+            vocabs.add(new Vocab("Diktat", "Für den Donnerstag"));
+            vocabs.add(new Vocab("Diktat", "hatte sich Frau Sommer"));
+            vocabs.add(new Vocab("Diktat", "etwas besonders Schönes ausgedacht:"));
+            vocabs.add(new Vocab("Diktat", "Sie ging mit ihrer Klasse zum Eislaufen."));
+        } else if ("Unit3b".equals(number)) {
+            vocabs.add(new Vocab("etwas beenden", "finish something"));
+            vocabs.add(new Vocab("Na los, Dad!", "Come on, Dad!"));
+            vocabs.add(new Vocab("Wie geht's dir?", "How are you?"));
+            vocabs.add(new Vocab("Hör zu, Justin.", "Listen, Justin."));
+            vocabs.add(new Vocab("zuhören, horchen", "listen"));
+            vocabs.add(new Vocab("viel", "much"));
+            vocabs.add(new Vocab("Job, Arbeitsstelle", "job"));
+            vocabs.add(new Vocab("Studio", "studio"));
+            vocabs.add(new Vocab("Programm, Sendung", "programme"));
+            vocabs.add(new Vocab("Welche Programme?", "What programmes?"));
+            vocabs.add(new Vocab("später", "later"));
+            vocabs.add(new Vocab("Mitternacht", "midnight"));
+            vocabs.add(new Vocab("zu spät", "too late"));
+            vocabs.add(new Vocab("zu kalt", "too cold"));
+            vocabs.add(new Vocab("zu groß", "too big"));
+            vocabs.add(new Vocab("aufstehen", "get up"));
+            vocabs.add(new Vocab("Hör mir zu.", "Listen to me."));
+            vocabs.add(new Vocab("Hör dir das Lied an.", "Listen to the song."));
+            vocabs.add(new Vocab("Wann steht er auf?", "When does he get up?"));
+            vocabs.add(new Vocab("Hörst du mir zu?", "Do you listen to me?"));
+            vocabs.add(new Vocab("Hörst du mich?", "Do you hear me?"));
+            vocabs.add(new Vocab("Wie findest du es?", "How do you like it?"));
+            vocabs.add(new Vocab("Es geht um eine Möwe.", "It's about a seagull."));
+            vocabs.add(new Vocab("jemandem etwas schicken", "send something to somebody"));
+            vocabs.add(new Vocab("Idee, Vorstellung", "idea"));
+            vocabs.add(new Vocab("hören", "hear"));
+            vocabs.add(new Vocab("Partner, Partnerin", "partner"));
+            vocabs.add(new Vocab("jemanden interviewen, befragen", "interview somebody"));
+            vocabs.add(new Vocab("(das) Alter", "age"));
+            vocabs.add(new Vocab("auch", "also"));
+            vocabs.add(new Vocab("Meter", "metre"));
         } else if ("Unit3a1".equals(number)) {
             vocabs.add(new Vocab("wütend werden", "get angry"));
             vocabs.add(new Vocab("nass", "wet"));
