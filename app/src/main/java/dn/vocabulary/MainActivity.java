@@ -40,6 +40,18 @@ public class MainActivity extends AppCompatActivity {
         startExam("Unit3d", view);
     }
 
+    public void startUnit4(View view) {
+        startExam("Unit4", view);
+    }
+
+    public void startUnit4a(View view) {
+        startExam("Unit4a", view);
+    }
+
+    public void startUnit4b(View view) {
+        startExam("Unit4b", view);
+    }
+
     public void startDiktat(View view) {
         startExam("Diktat", false, view);
     }
