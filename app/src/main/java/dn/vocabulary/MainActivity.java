@@ -52,8 +52,16 @@ public class MainActivity extends AppCompatActivity {
         startExam("Unit4b", view);
     }
 
-    public void startDiktat(View view) {
-        startExam("Diktat", false, view);
+    public void startUnit4c(View view) {
+        startExam("Unit4c", view);
+    }
+
+    public void startUnit4past(View view) {
+        startExam("Unit4past", view);
+    }
+
+    public void startDeutsch(View view) {
+        startExam("DE", view);
     }
 
     private void startExam(String number, View view) {
