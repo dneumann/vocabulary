@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="24th April"
+        android:text="11th June"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -150,9 +150,10 @@
         android:id="@+id/button27"
         android:layout_width="55dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:onClick="startUnit4c"
         android:text="4 c"
-        app:layout_constraintStart_toStartOf="@+id/button25"
+        app:layout_constraintStart_toStartOf="@+id/button24"
         app:layout_constraintTop_toBottomOf="@+id/button25" />
 
     <Button
@@ -161,7 +162,25 @@
         android:layout_height="wrap_content"
         android:onClick="startUnit4past"
         android:text="4 past"
+        app:layout_constraintStart_toEndOf="@+id/button30"
+        app:layout_constraintTop_toTopOf="@+id/button27" />
+
+    <Button
+        android:id="@+id/button29"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:onClick="startUnit4d"
+        android:text="4 d"
         app:layout_constraintStart_toEndOf="@+id/button27"
         app:layout_constraintTop_toTopOf="@+id/button27" />
+
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:onClick="startUnit4e"
+        android:text="4 e"
+        app:layout_constraintStart_toEndOf="@+id/button29"
+        app:layout_constraintTop_toTopOf="@+id/button29" />
 
 </android.support.constraint.ConstraintLayout>
