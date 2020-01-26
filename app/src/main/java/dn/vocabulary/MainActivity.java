@@ -1,7 +1,7 @@
 package dn.vocabulary;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +14,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void startErste(View view) {
+        startExam("erste", view);
+    }
+    public void startZweite(View view) {
+        startExam("zweite", view);
+    }
+    public void startDritte(View view) {
+        startExam("dritte", view);
+    }
+    public void startVierte(View view) {
+        startExam("vierte", view);
+    }
+    public void startFuenfte(View view) {
+        startExam("fuenfte", view);
+    }
+    public void startSechste(View view) {
+        startExam("sechste", view);
+    }
+    public void startSiebte(View view) {
+        startExam("siebte", view);
     }
 
     public void startUnit3(View view) {

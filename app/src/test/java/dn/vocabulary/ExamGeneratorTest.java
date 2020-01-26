@@ -10,7 +10,7 @@ public class ExamGeneratorTest {
     public void test() {
         ExamGenerator gen = new ExamGenerator();
 
-        List<Vocab> results = gen.getExam();
+        List<Vocab> results = gen.getExam("", false);
 
         String out = "";
         for (Vocab res : results) {

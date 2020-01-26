@@ -10,7 +10,58 @@ public class ExamGenerator {
 
     public List<Vocab> getExam(String number, boolean randomize) {
 
-        if ("Unit1chaos".equals(number)) {
+        if ("erste".equals(number)) {
+            vocabs.add(new Vocab("como", "wie"));
+            vocabs.add(new Vocab("ir", "gehen"));
+            vocabs.add(new Vocab("va", "geht"));
+            vocabs.add(new Vocab("ello", "es"));
+            vocabs.add(new Vocab("bien, bueno", "gut"));
+            vocabs.add(new Vocab("y", "und"));
+            vocabs.add(new Vocab("a ti (Dativ)", "dir"));
+            vocabs.add(new Vocab("también", "auch"));
+            vocabs.add(new Vocab("gracias", "danke"));
+            vocabs.add(new Vocab("yo", "ich"));
+            vocabs.add(new Vocab("tener que, deber", "müssen"));
+            vocabs.add(new Vocab("yo tengo que", "ich muss"));
+            vocabs.add(new Vocab("así", "so"));
+            vocabs.add(new Vocab("adiós", "tschüss"));
+            vocabs.add(new Vocab("llamarse", "heißen"));
+            vocabs.add(new Vocab("yo me llamo", "ich heiße"));
+            vocabs.add(new Vocab("tú", "du"));
+            vocabs.add(new Vocab("mi (m, n)", "mein"));
+            vocabs.add(new Vocab("mi (f)", "meine"));
+            vocabs.add(new Vocab("el nombre", "der Name"));
+            vocabs.add(new Vocab("yo soy", "ich bin"));
+            vocabs.add(new Vocab("es, está", "ist"));
+        } else if ("zweite".equals(number)) {
+            vocabs.add(new Vocab("el camino", "der Weg"));
+            vocabs.add(new Vocab("esto es", "das ist"));
+            vocabs.add(new Vocab("la tía", "die Tante"));
+            vocabs.add(new Vocab("tu (m, n)", "dein"));
+            vocabs.add(new Vocab("tu (f)", "deine"));
+            vocabs.add(new Vocab("no", "nein"));
+            vocabs.add(new Vocab("no (+ Verb)", "nicht"));
+            vocabs.add(new Vocab("ella", "sie"));
+            vocabs.add(new Vocab("volar", "fliegen"));
+            vocabs.add(new Vocab("ella vuela", "sie fliegt"));
+            vocabs.add(new Vocab("a (+ Amerika)", "nach"));
+            vocabs.add(new Vocab("trabajar", "arbeiten"));
+            vocabs.add(new Vocab("ahí", "da"));
+            vocabs.add(new Vocab("por favor", "bitte"));
+            vocabs.add(new Vocab("estar loco", "spinnen"));
+            vocabs.add(new Vocab("ella está loca", "sie spinnt"));
+            vocabs.add(new Vocab("ahora mismo", "gerade"));
+            vocabs.add(new Vocab("pero", "aber"));
+            vocabs.add(new Vocab("ahora", "jetzt"));
+            vocabs.add(new Vocab("'se ha ido'", "weg"));
+            vocabs.add(new Vocab("era", "war"));
+            vocabs.add(new Vocab("tú te llamas", "du heißt"));
+        } else if ("dritte".equals(number)) {
+            vocabs.add(new Vocab("el coche", "das Auto"));
+            vocabs.add(new Vocab("un coche", "ein Auto"));
+            vocabs.add(new Vocab("los coches", "die Autos"));
+
+        } else if ("Unit1chaos".equals(number)) {
             vocabs.add(new Vocab("Chaos", "chaos"));
             vocabs.add(new Vocab("Laden an der Ecke", "corner shop"));
             vocabs.add(new Vocab("Meister/in", "master"));
