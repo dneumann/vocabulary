@@ -16,17 +16,26 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void startErste(View view) {
-        startExam("erste", view);
+    public void startErsteA(View view) {
+        startExam("ersteA", view);
     }
-    public void startZweite(View view) {
-        startExam("zweite", view);
+    public void startErsteB(View view) {
+        startExam("ersteB", view);
+    }
+    public void startZweiteA(View view) {
+        startExam("zweiteA", view);
+    }
+    public void startZweiteB(View view) {
+        startExam("zweiteB", view);
     }
     public void startDritte(View view) {
         startExam("dritte", view);
     }
-    public void startVierte(View view) {
-        startExam("vierte", view);
+    public void startVierteA(View view) {
+        startExam("vierteA", view);
+    }
+    public void startVierteB(View view) {
+        startExam("vierteB", view);
     }
     public void startFuenfte(View view) {
         startExam("fuenfte", view);

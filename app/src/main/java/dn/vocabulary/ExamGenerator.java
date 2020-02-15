@@ -10,7 +10,7 @@ public class ExamGenerator {
 
     public List<Vocab> getExam(String number, boolean randomize) {
 
-        if ("erste".equals(number)) {
+        if ("ersteA".equals(number)) {
             vocabs.add(new Vocab("como", "wie"));
             vocabs.add(new Vocab("ir", "gehen"));
             vocabs.add(new Vocab("va", "geht"));
@@ -22,6 +22,7 @@ public class ExamGenerator {
             vocabs.add(new Vocab("gracias", "danke"));
             vocabs.add(new Vocab("yo", "ich"));
             vocabs.add(new Vocab("tener que, deber", "müssen"));
+        } else if ("ersteB".equals(number)) {
             vocabs.add(new Vocab("yo tengo que", "ich muss"));
             vocabs.add(new Vocab("así", "so"));
             vocabs.add(new Vocab("adiós", "tschüss"));
@@ -33,7 +34,7 @@ public class ExamGenerator {
             vocabs.add(new Vocab("el nombre", "der Name"));
             vocabs.add(new Vocab("yo soy", "ich bin"));
             vocabs.add(new Vocab("es, está", "ist"));
-        } else if ("zweite".equals(number)) {
+        } else if ("zweiteA".equals(number)) {
             vocabs.add(new Vocab("el camino", "der Weg"));
             vocabs.add(new Vocab("esto es", "das ist"));
             vocabs.add(new Vocab("la tía", "die Tante"));
@@ -45,6 +46,7 @@ public class ExamGenerator {
             vocabs.add(new Vocab("volar", "fliegen"));
             vocabs.add(new Vocab("ella vuela", "sie fliegt"));
             vocabs.add(new Vocab("a (+ Amerika)", "nach"));
+        } else if ("zweiteB".equals(number)) {
             vocabs.add(new Vocab("trabajar", "arbeiten"));
             vocabs.add(new Vocab("ahí", "da"));
             vocabs.add(new Vocab("por favor", "bitte"));
@@ -60,6 +62,45 @@ public class ExamGenerator {
             vocabs.add(new Vocab("el coche", "das Auto"));
             vocabs.add(new Vocab("un coche", "ein Auto"));
             vocabs.add(new Vocab("los coches", "die Autos"));
+        } else if ("vierteA".equals(number)) {
+            vocabs.add(new Vocab("comer", "essen"));
+            vocabs.add(new Vocab("él come", "er isst"));
+            vocabs.add(new Vocab("aprender", "lernen"));
+            vocabs.add(new Vocab("venir", "kommen"));
+            vocabs.add(new Vocab("decir", "sagen"));
+            vocabs.add(new Vocab("el alemán (idioma)", "das Deutsch"));
+            vocabs.add(new Vocab("de (un país)", "aus"));
+            vocabs.add(new Vocab("España", "Spanien"));
+            vocabs.add(new Vocab("Alemania", "Deutschland"));
+            vocabs.add(new Vocab("en", "in"));
+            vocabs.add(new Vocab("confundido", "verwirrt"));
+            vocabs.add(new Vocab("un poco", "ein bisschen"));
+        } else if ("vierteB".equals(number)) {
+            vocabs.add(new Vocab("un español", "ein Spanier"));
+            vocabs.add(new Vocab("superbién", "super"));
+            vocabs.add(new Vocab("quien", "wer"));
+            vocabs.add(new Vocab("tú eres", "du bist"));
+            vocabs.add(new Vocab("o", "oder"));
+            vocabs.add(new Vocab("la disculpa", "die Entschuldigung"));
+            vocabs.add(new Vocab("de dónde", "woher"));
+            vocabs.add(new Vocab("exacto", "genau"));
+            vocabs.add(new Vocab("donde", "wo"));
+            vocabs.add(new Vocab("vivir", "wohnen"));
+            vocabs.add(new Vocab("yo vivo", "ich wohne"));
+            vocabs.add(new Vocab("tú vives", "du wohnst"));
+            vocabs.add(new Vocab("él vive", "er wohnt"));
+        } else if ("fuenfte".equals(number)) {
+            vocabs.add(new Vocab("ella dice a Nico", "sie sagt zu Nico"));
+            vocabs.add(new Vocab("yo digo", "ich sage"));
+            vocabs.add(new Vocab("tú dices", "du sagst"));
+            vocabs.add(new Vocab("él dice", "er sagt"));
+        } else if ("sechste".equals(number)) {
+            vocabs.add(new Vocab("una española", "eine Spanierin"));
+            vocabs.add(new Vocab("estudiar", "studieren"));
+            vocabs.add(new Vocab("a veces", "manchmal"));
+            vocabs.add(new Vocab("nunca", "nie"));
+            vocabs.add(new Vocab("una vez", "einmal"));
+            vocabs.add(new Vocab("a gusto, con gusto", "gern"));
 
         } else if ("Unit1chaos".equals(number)) {
             vocabs.add(new Vocab("Chaos", "chaos"));
