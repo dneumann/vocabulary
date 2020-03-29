@@ -46,6 +46,21 @@ public class MainActivity extends AppCompatActivity {
     public void startSiebte(View view) {
         startExam("siebte", view);
     }
+    public void startAchte(View view) {
+        startExam("achte", view);
+    }
+    public void startNeunte(View view) {
+        startExam("neunte", view);
+    }
+    public void startZehnte(View view) {
+        startExam("zehnte", view);
+    }
+    public void startElfte(View view) {
+        startExam("elfte", view);
+    }
+    public void startZwoelfte(View view) {
+        startExam("zwoelfte", view);
+    }
 
     public void startUnit3(View view) {
         startExam("Unit3", view);

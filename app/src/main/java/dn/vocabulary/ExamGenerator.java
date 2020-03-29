@@ -101,6 +101,77 @@ public class ExamGenerator {
             vocabs.add(new Vocab("nunca", "nie"));
             vocabs.add(new Vocab("una vez", "einmal"));
             vocabs.add(new Vocab("a gusto, con gusto", "gern"));
+        } else if ("siebte".equals(number)) {
+            vocabs.add(new Vocab("la mañana", "der Morgen"));
+            vocabs.add(new Vocab("el señor", "der Herr"));
+            vocabs.add(new Vocab("a usted", "Ihnen"));
+            vocabs.add(new Vocab("la señora, la mujer", "die Frau"));
+            vocabs.add(new Vocab("el día", "der Tag"));
+            vocabs.add(new Vocab("muy", "sehr"));
+            vocabs.add(new Vocab("el abuelo", "der Opa"));
+            vocabs.add(new Vocab("el bolso", "die Tasche"));
+            vocabs.add(new Vocab("bonito", "schön"));
+            vocabs.add(new Vocab("sí", "ja"));
+            vocabs.add(new Vocab("la calle", "die Straße"));
+            vocabs.add(new Vocab("suena bien", "klingt gut"));
+            vocabs.add(new Vocab("di 'una vez'", "sag mal"));
+        } else if ("achte".equals(number)) {
+            vocabs.add(new Vocab("la tarde/la noche", "der Abend"));
+            vocabs.add(new Vocab("el estiércol", "der Mist"));
+            vocabs.add(new Vocab("guay", "cool"));
+            vocabs.add(new Vocab("otra vez", "noch mal"));
+            vocabs.add(new Vocab("la parada", "der Stopp"));
+            vocabs.add(new Vocab("el viaje", "die Reise"));
+            vocabs.add(new Vocab("hacer", "machen"));
+            vocabs.add(new Vocab("hasta pronto", "bis bald"));
+            vocabs.add(new Vocab("hasta la vista", "auf Wiedersehen"));
+            vocabs.add(new Vocab("todo", "alles"));
+            vocabs.add(new Vocab("necesitar", "brauchen"));
+            vocabs.add(new Vocab("la ayuda", "die Hilfe"));
+            vocabs.add(new Vocab("el taxi", "das Taxi"));
+        } else if ("neunte".equals(number)) {
+            vocabs.add(new Vocab("adonde", "wohin"));
+            vocabs.add(new Vocab("querer", "wollen"));
+            vocabs.add(new Vocab("tú quieres", "du willst"));
+            vocabs.add(new Vocab("el centro", "das Zentrum"));
+            vocabs.add(new Vocab("mal", "schlecht"));
+            vocabs.add(new Vocab("tener", "haben"));
+            vocabs.add(new Vocab("tú tienes", "du hast"));
+            vocabs.add(new Vocab("la dirección (de casa)", "die Adresse"));
+            vocabs.add(new Vocab("el número de casa", "die Hausnummer"));
+            vocabs.add(new Vocab("conocer", "kennen"));
+            vocabs.add(new Vocab("ayudar", "helfen"));
+        } else if ("zehnte".equals(number)) {
+            vocabs.add(new Vocab("ellos/ellas", "sie"));
+            vocabs.add(new Vocab("el momento", "der Moment"));
+            vocabs.add(new Vocab("todavía", "noch"));
+            vocabs.add(new Vocab("corto", "kurz"));
+            vocabs.add(new Vocab("repostar", "tanken"));
+            vocabs.add(new Vocab("qué", "was"));
+            vocabs.add(new Vocab("esperar", "warten"));
+            vocabs.add(new Vocab("no, ninguna", "keine"));
+            vocabs.add(new Vocab("buscar", "suchen"));
+            vocabs.add(new Vocab("su (de él)", "seine"));
+            vocabs.add(new Vocab("su (de usted)", "Ihr"));
+            vocabs.add(new Vocab("ni idea", "keine Ahnung"));
+            vocabs.add(new Vocab("aquí", "hier"));
+        } else if ("elfte".equals(number)) {
+            vocabs.add(new Vocab("el aeropuerto", "der Flughafen"));
+            vocabs.add(new Vocab("el problema", "das Problem"));
+            vocabs.add(new Vocab("él tiene", "er hat"));
+            vocabs.add(new Vocab("hacer", "machen"));
+            vocabs.add(new Vocab("poder", "können"));
+            vocabs.add(new Vocab("tú puedes", "du kannst"));
+            vocabs.add(new Vocab("llamar (por teléfono)", "anrufen"));
+            vocabs.add(new Vocab("el teléfono", "das Telefon"));
+            vocabs.add(new Vocab("él puede", "er kann"));
+            vocabs.add(new Vocab("el padre", "der Vater"));
+            vocabs.add(new Vocab("la policía (en general)", "die Polizei"));
+            vocabs.add(new Vocab("la idea", "die Idee"));
+            vocabs.add(new Vocab("el policía", "der Polizist"));
+            vocabs.add(new Vocab("a lo mejor", "vielleicht"));
+            vocabs.add(new Vocab("él ayuda", "er hilft"));
+            vocabs.add(new Vocab("a nosotros", "uns"));
 
         } else if ("Unit1chaos".equals(number)) {
             vocabs.add(new Vocab("Chaos", "chaos"));

@@ -116,4 +116,52 @@
         app:layout_constraintStart_toEndOf="@+id/button38"
         app:layout_constraintTop_toBottomOf="@+id/button35" />
 
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startAchte"
+        android:text="achte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button38" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startSiebte"
+        android:text="siebte"
+        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/button38" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startNeunte"
+        android:text="neunte"
+        app:layout_constraintStart_toEndOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/button38" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startElfte"
+        android:text="elfte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startZehnte"
+        android:text="zehnte"
+        app:layout_constraintEnd_toStartOf="@+id/button19"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
 </android.support.constraint.ConstraintLayout>
